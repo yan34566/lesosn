@@ -1,46 +1,15 @@
-print("Hello world")
-print()
-print('test')
+nums = [float(input(f"Введи {i+1}-е число: ")) for i in range(3)]
 
-# '''
-# однрядковий
-# багато рядковий
-# коментар
-# тут можно писати будьякий текст
+choice = input("Обери опцію (max, min, avg): ")
 
-
-
-number = int(input("Enter 3-digit number: "))
-
-n1 = number // 100
-
-n2 = number // 10 % 10
-
-
-n2 = number % 100 // 10
-n3 = number % 10
-
-result = n1 + n2 + n3
-print(f"n1: {n1} n2: {n2} n3 {n3}")
-print(f"Result: {result}")
-
-number = int(input("Enter 4-digit number: "))
-
-n1 = number // 100
-
-n2 = number // 10 % 10
-
-n2 = number % 100 // 10
-n3 = number % 10
-n4 = number % 10
-
-result = n1 + n2 + n3 + n4
-print(f"n1: {n1} n2: {n2} n3: {n3} n:4 {n4}  ")
-print(f"Result: {result}")
-
-diagonal1 = int(input("user input diagonal1"))
-diagonal2 = int(input("user input diagonal2"))
-
-area = (diagonal1 * diagonal2) / 2
-
-print(f"area: {area}")
+if choice == "max":
+    result = max(nums)
+    print(f"Максимум: {result}")
+elif choice == "min":
+    result = min(nums)
+    print(f"Мінімум: {result}")
+elif choice == "avg":
+    result = sum(nums) / len(nums)
+    print(f"Середнє арифметичне: {result}")
+else:
+    print("Невірний вибір опції")
