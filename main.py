@@ -1,46 +1,60 @@
-print("Hello world")
-print()
-print('test')
+# choice = input("день недилі від 1 до 7 ")
+#
+# if choice == "1":
+#     result = "понеділок"
+#     print(result)
+#
+# elif choice == "2":
+#     result = "віторок"
+#     print(result)
+#
+# elif choice == "3":
+#     result = "середа"
+#     print(result)
+#
+# elif choice == "4":
+#     result = "четверг"
+#     print(result)
+#
+# elif choice == "5":
+#     result = "п_ятниця"
+#     print(result)
+#
+# elif choice == "6":
+#     result = "суббота"
+#     print(result)
+#
+# elif choice == "7":
+#     result = "неділя"
+#     print(result)
+#
+# number1 = float(input("Enter first number: "))
+# number2 = float(input("Enter second number: "))
+# operation = input("Enter math operation (+, -, *, /): ")
+# if operation == "+":
+#     result = number1 + number2
+# elif operation == "-":
+#     result = number1 - number2
+# elif operation == "*":
+#     result = number1 * number2
+# elif operation == "/":
+#     if number2 != 0:
+#         result = number1/number2
+#     else:
+#         print("учи математику")
+# else:
+#     print("ты накосячил")
+# if result is not None:
+#     print(f"результат:{result}")
 
-# '''
-# однрядковий
-# багато рядковий
-# коментар
-# тут можно писати будьякий текст
+# number1 = float(input("Enter first number: "))
+# number2 = float(input("Enter second number: "))
+# if number1 == number2 :
+#     print ("одинаковые числа")
+# else:
+#     if number1 < number2:
+#         print(f"числа по возрастанию {number1} , {number2}")
+#     else:
+#          print(f"числа по возрастанию {number2} , {number1}")
 
 
-
-number = int(input("Enter 3-digit number: "))
-
-n1 = number // 100
-
-n2 = number // 10 % 10
-
-
-n2 = number % 100 // 10
-n3 = number % 10
-
-result = n1 + n2 + n3
-print(f"n1: {n1} n2: {n2} n3 {n3}")
-print(f"Result: {result}")
-
-number = int(input("Enter 4-digit number: "))
-
-n1 = number // 100
-
-n2 = number // 10 % 10
-
-n2 = number % 100 // 10
-n3 = number % 10
-n4 = number % 10
-
-result = n1 + n2 + n3 + n4
-print(f"n1: {n1} n2: {n2} n3: {n3} n:4 {n4}  ")
-print(f"Result: {result}")
-
-diagonal1 = int(input("user input diagonal1"))
-diagonal2 = int(input("user input diagonal2"))
-
-area = (diagonal1 * diagonal2) / 2
-
-print(f"area: {area}")
