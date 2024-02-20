@@ -1,84 +1,88 @@
-# def factorial(n):
-#     if n == 0 or n == 1:
-#         return 1
-#     else:
-#         return n * factorial(n-1)
+# class Person:
+#     def init(self, first_name, last_name, age):
+#         self.first_name = first_name
+#         self.last_name = last_name
+#         self.age = age
 #
-# result = factorial(5)
-# print(result)
+#     def get_info(self):
+#         return f"Name: {self.first_name} {self.last_name}, Age: {self.age}"
+#
+#
+# class Teacher(Person):
+#     def init(self, first_name, last_name, age, subjects):
+#         super().init(first_name, last_name, age)
+#         self.subjects = subjects
+#
+#     def teach(self):
+#         return "Giving lectures and conducting classes"
+#
+#     def evaluate_students(self):
+#         return "Evaluating students' performances"
+#
+#
+# class Student(Person):
+#     def init(self, first_name, last_name, age, course):
+#         super().init(first_name, last_name, age)
+#         self.course = course
+#
+#     def study(self):
+#         return "Attending classes and studying"
+#
+#     def get_performance(self):
+#         return "Checking own academic performance"
+#
+#
+# class Subject:
+#     def init(self, name, description):
+#         self.name = name
+#         self.description = description
+#
+#     def get_info(self):
+#         return f"Subject: {self.name}, Description: {self.description}"
+#
+#
+# class Academy:
+#     def init(self, name, address):
+#         self.name = name
+#         self.address = address
+#         self.teachers = []
+#         self.students = []
+#         self.subjects = []
+#
+#     def add_teacher(self, teacher):
+#         self.teachers.append(teacher)
+#
+#     def add_student(self, student):
+#         self.students.append(student)
+#
+#     def add_subject(self, subject):
+#         self.subjects.append(subject)
+#
+#     def get_overview(self):
+#         teacher_info = "\n".join([teacher.get_info() for teacher in self.teachers])
+#         student_info = "\n".join([student.get_info() for student in self.students])
+#         subject_info = "\n".join([subject.get_info() for subject in self.subjects])
+#         return f"Academy: {self.name}, Address: {self.address}\n\nTeachers:\n{teacher_info}\n\nStudents:\n{student_info}\n\nSubjects:\n{subject_info}"
+#
+#
+#
+# # Приклад використання:
+# math_teacher = Teacher(first_name: "John", last_name: "Doe", age: 35, ["Mathematics", "Physics"])
+# english_teacher = Teacher(first_name: "Alice", laste_name: "Smith", age: 40, ["English", "Literature"])
+#
+# physics_student = Student("Tom", "Jones", 20, "Physics")
+# chemistry_student = Student("Emily", "Brown", 22, "Chemistry")
+#
+# math_subject = Subject("Mathematics", "Basic math principles")
+# physics_subject = Subject("Physics", "Study of motion and energy")
+#
+# my_academy = Academy("ABC Academy", "123 Main Street")
+# my_academy.add_teacher(math_teacher)
+# my_academy.add_teacher(english_teacher)
+# my_academy.add_student(physics_student)
+# my_academy.add_student(chemistry_student)
+# my_academy.add_subject(math_subject)
+# my_academy.add_subject(physics_subject)
+#
+# print(my_academy.get_overview())
 
-# def power(n, e):
-#     if e == 0:
-#         return 1
-#     elif e > 0:
-#         return n * power(n, e - 1)
-#     else:
-#         return 1 / (n * power(n, -e - 1))
-#
-# result_positiv = power(6, 2)
-# result_negativ = power(6, -2)
-# print(result_positiv)
-# print(result_negativ)
-
-
-# def stars(N):
-#     if N > 0:
-#         print('*', end='')
-#         stars(N - 1)
-#     else:
-#         print()
-#
-# user_input = int(input("введіть  кількість потрібних зірок: "))
-# stars(user_input)
-
-# def sum_range(a, b):
-#     if a > b:
-#         return 0
-#     else:
-#         return a + sum_range(a + 1, b)
-#
-# a = 1
-# b = 5
-# print(f"сума чисел в діапазоні від {a} до {b} дорівнює {sum_range(a, b)}")
-
-# def list:
-#     if a > b:
-#         return 0
-#     print(list)
-#     else:
-#         return max
-
-# import random
-#
-#
-# def find_min_sequence_start(arr, start_index=0):
-#
-#
-#     if start_index + 10 > len(arr):
-#         return start_index
-#
-#
-#     current_sequence = arr[start_index:start_index + 10]
-#     current_sum = sum(current_sequence)
-#
-#
-#     next_start_index = find_min_sequence_start(arr, start_index + 1)
-#
-#
-#     next_sequence = arr[next_start_index:next_start_index + 10]
-#     next_sum = sum(next_sequence)
-#
-#     return start_index if current_sum < next_sum else next_start_index
-#
-# random_numbers = [random.randint(1, 100) for _ in range(100)]
-#
-#
-# start_position = find_min_sequence_start(random_numbers)
-#
-#
-# print("Список із рандомними числами: ", random_numbers)
-# print("Початкова позиція послідовності:", start_position)
-# min_sequence = random_numbers[start_position:start_position + 10]
-# min_sequence_sum = sum(min_sequence)
-# print("Мінімальна послідовність:", min_sequence)
-# print("Сума мінімальної послідовності:", min_sequence_sum)
